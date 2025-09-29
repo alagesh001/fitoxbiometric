@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import BiometricDashboard from "./biometricdash";
+import QRgen from "./qrgen";
 
 export default function App() {
   return (
@@ -19,7 +19,9 @@ export default function App() {
         {/* Define routes */}
         <Routes>
           {/* <Route path="/" element={<h1 className="text-xl">Welcome to FITOX Biometric Handle</h1>} /> */}
-          <Route path="/" element={<BiometricDashboard />} />
+          <Route path="/" element={<QRgen />} />
+                    <Route path="/qrcode" element={<QRgen />} />
+
         </Routes>
       </div>
     </Router>
